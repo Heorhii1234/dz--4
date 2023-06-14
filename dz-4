@@ -1,1 +1,17 @@
+class SecondClass {
+    private int fieldValue = 10;
+
+    public String printAndReturnField() {
+        System.out.println("---" + fieldValue + "---");
+        return String.valueOf(fieldValue);
+    }
+}
+
+public class SimpleApplication {
+    public static void main(String[] args) {
+        SecondClass secondObj = new SecondClass();
+        String returnedValue = secondObj.printAndReturnField();
+        System.out.println("~~~ " + returnedValue + " ~~~");
+    }
+}
 
